@@ -7,9 +7,9 @@ import axios from 'axios';
 
 function App() {
   const [testimonies, setTestimonies] = useState([{}]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [count, setCount] = useState(0)
+  let [loading, setLoading] = useState(false);
+  let [error, setError] = useState('');
+  let [count, setCount] = useState(0)
 
   const getTestimonies = async () =>{
     setLoading(true)
